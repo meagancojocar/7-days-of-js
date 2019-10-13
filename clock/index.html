@@ -25,6 +25,9 @@
     }
 
     body {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
       margin: 0;
       font-size: 2rem;
       display: flex;
@@ -108,7 +111,6 @@ else {
     
     const seconds = now.getSeconds();
     const secondsDegrees = ((seconds / 60) * 360);
-    console.log(secondsDegrees)
     secondHand.style.transform = `rotate(${millisDegrees+secondsDegrees}deg)`;
 
     const mins = now.getMinutes();
